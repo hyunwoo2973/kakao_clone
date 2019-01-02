@@ -4,57 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Friends</title>
     <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <title>Chat</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <header>
-      <div class="header-top"></div>
-      <div class="header-column">
-        <i class="fa fa-plane"></i> <i class="fa fa-wifi"></i>
-      </div>
-      <div class="header-column"><span class="header-time">18:24</span></div>
-      <div class="header-column">
-        <i class="fa fa-moon-o"></i> <i class="fa fa-bluetooth-b"></i>
-        <span class="header-battery">66%</span>
-        <i class="fa fa-battery-full"></i>
-      </div>
-      <div class="header_bottom">
-        <div class="header-column">
-          <a href="chats.html"> <i class="fa fa-chevron-left"></i> </a>
+  <body class="body-chat">
+    <header class="top-header chat-header">
+      <div class="header__top">
+        <div class="header__column">
+          <i class="fa fa-plane"></i> <i class="fa fa-wifi"></i>
         </div>
-        <div class="header-column"><span class="header_text">Lynn</span></div>
-        <div class="header-column">
+        <div class="header__column">
+          <span class="header__time">18:38</span>
+        </div>
+        <div class="header__column">
+          <i class="fa fa-moon-o"></i> <i class="fa fa-bluetooth-b"></i>
+          <span class="header__battery"
+            >66% <i class="fa fa-battery-full"></i
+          ></span>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__column">
+          <a href="chats.html"> <i class="fa fa-chevron-left fa-lg"></i> </a>
+        </div>
+        <div class="header__column"><span class="header__text">Lynn</span></div>
+        <div class="header__column">
           <i class="fa fa-search"></i> <i class="fa fa-bars"></i>
         </div>
       </div>
     </header>
     <main class="chat">
       <div class="date-divider">
-        <span class="date-divider_text">wed,aug 2th,2017 </span>
+        <span class="date-divider__text">Wednesday, August 2, 2017</span>
       </div>
-      <div class="chat_message chat_message-from-me">
-        <span class="date_time"> 17:55 </span>
-        <span class="chat_contents"> hello this is test message </span>
+      <div class="chat__message chat__message-from-me">
+        <span class="chat__message-time">17:55</span>
+        <span class="chat__message-body"> Hello! This is a test message. </span>
       </div>
-      <div class="chat_message chat_message--to-me">
-        <img src="images/avatar.jpg" alt="" />
-        <div class="centermessge">
-          <div class="chat_name">Lynn</div>
-          <span class="date_time"> 1:55 </span>
-          <span class="chat_contents"> and this is answer </span>
+      <div class="chat__message chat__message--to-me">
+        <img src="images/avatar.jpg" class="chat__message-avatar" />
+        <div class="chat__message-center">
+          <h3 class="chat__message-username">Lynn</h3>
+          <span class="chat__message-body"> And this is an answer </span>
         </div>
+        <span class="chat__message-time">19:35</span>
       </div>
     </main>
-    <div class="type_message">
-      <i class="fa fa-plus fa-2x"></i>
-      <div class="type-message_input">
-        <input type="text" /> <i class="fa fa-smile-o"></i>
-        <span class="record_message"> <i class="fa fa-microphone"></i> </span>
+    <div class="type-message">
+      <i class="fa fa-plus fa-lg"></i>
+      <div class="type-message__input">
+        <input type="text" /> <i class="fa fa-smile-o fa-lg"></i>
+        <span class="record-message">
+          <i class="fa fa-microphone fa-lg"></i>
+        </span>
       </div>
+    </div>
+    <div class="bigScreenText">
+      <span>Please make your screen smaller</span>
     </div>
   </body>
 </html>

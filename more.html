@@ -9,63 +9,67 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div class="header-top"></div>
-      <div class="header-column">
-        <i class="fa fa-plane"></i> <i class="fa fa-wifi"></i>
+    <header class="top-header">
+      <div class="header__top">
+        <div class="header__column">
+          <i class="fa fa-plane"></i> <i class="fa fa-wifi"></i>
+        </div>
+        <div class="header__column"><span class="header-time">18:24</span></div>
+        <div class="header__column">
+          <i class="fa fa-moon-o"></i> <i class="fa fa-bluetooth-b"></i>
+          <span class="header-battery">66%</span>
+          <i class="fa fa-battery-full"></i>
+        </div>
       </div>
-      <div class="header-column"><span class="header-time">18:24</span></div>
-      <div class="header-column">
-        <i class="fa fa-moon-o"></i> <i class="fa fa-bluetooth-b"></i>
-        <span class="header-battery">66%</span>
-        <i class="fa fa-battery-full"></i>
-      </div>
-      <div class="header_bottom">
-        <div class="header-column"><span class="header_text">more</span></div>
-        <div class="header-column"><i class="fa fa-cog fa-lg"></i></div>
+      <div class="header__bottom">
+        <div class="header__column"></div>
+        <div class="header__column"><span class="header_text">more</span></div>
+        <div class="header__column"><i class="fa fa-cog fa-lg"></i></div>
       </div>
     </header>
     <main class="more">
       <header class="more_header">
-        <div class="header_column">
+        <div class="more-header_column">
           <img src="images/avatar.jpg" alt="" />
-          <div class="header_info">
-            <h3 class="header_title">nicolas</h3>
-            <span class="header_subtitle">
-              itnicolasme@gmail.com <i class="fa fa-comment-o fa-2x"></i>
-            </span>
+          <div class="more-header_info">
+            <h3 class="more-header_title">nicolas</h3>
+            <span class="more-header_subtitle"> itnicolasme@gmail.com </span>
           </div>
         </div>
+        <i class="fa fa-comment-o fa-2x"></i>
       </header>
       <section class="more_options">
-        <div class="more_options">
+        <div class="more_option">
           <i class="fa fa-smile-o fa-2x"></i>
           <span class="more_option-title">emoticons</span>
         </div>
-        <div class="more_options">
+        <div class="more_option">
           <i class="fa fa-paint-brush fa-2x"></i>
           <span class="more_option-title">themes</span>
         </div>
-        <div class="more_options">
+        <div class="more_option">
           <i class="fa fa-hand-peace-o fa-2x"></i>
-          <span class="more_option-title">plus friend</span>
+          <span class="more_option-title">Plus Friend</span>
         </div>
-        <div class="more_options">
-          <i class="fa fa-user-circle-o"></i>
+        <div class="more_option">
+          <i class="fa fa-user-circle-o fa-2x"></i>
           <span class="more_option-title">account</span>
         </div>
-        <section class="more_plus-friends">
-          <header class="plus_friends-header">
-            <h2 class="more_plus-friends">Plus Friends</h2>
-            <span class="learn_more"><i class="fa fa-info"></i>Learn more</span>
-          </header>
-        </section>
+      </section>
+      <section class="more_plus-friends">
+        <header class="plus_friends-header">
+          <h2 class="more_plus-friends">Plus Friends</h2>
+          <span class="plus-friends_learn-more"
+            ><i class="fa fa-info-circle"></i>Learn more</span
+          >
+        </header>
         <div class="plus-friends_items">
           <div class="plus-friends_item">
-            <i class="fa fa-cutlery"></i
-            ><span class="plus-friends_items-title"> order </span>
+            <i class="fa fa-cutlery"></i>
+            <span class="plus-friends_items-title"> order </span>
           </div>
           <div class="plus-friends_item">
             <i class="fa fa-home"></i
@@ -97,25 +101,24 @@
           </div>
         </div>
       </section>
-      <section>
-        <section class="more_options">
-          <div class="more_option">
-            <i class="fa fa-history fa-2x"></i
-            ><span class="more_option">kakao story</span>
-          </div>
-          <div class="more_option">
-            <i class="fa fa-road fa-2x"></i
-            ><span class="more_option">path</span>
-          </div>
-          <div class="more_option">
-            <i class="fa fa-camera-retro fa-2x"></i
-            ><span class="more_option">kakao friends</span>
-          </div>
-        </section>
+
+      <section class="more_options">
+        <div class="more_option">
+          <i class="fa fa-history fa-2x"></i
+          ><span class="more_option-title">kakao story</span>
+        </div>
+        <div class="more_option">
+          <i class="fa fa-road fa-2x"></i
+          ><span class="more_option-title">path</span>
+        </div>
+        <div class="more_option">
+          <i class="fa fa-camera-retro fa-2x"></i
+          ><span class="more_option-title">kakao friends</span>
+        </div>
       </section>
     </main>
     <nav class="tab-bar">
-      <a href="index.html" class="tab-bar_tab tab-bar_tab--selected">
+      <a href="index.html" class="tab-bar_tab ">
         <i class="fa fa-user"></i> <span class="tab-bar_tab">Friends</span>
       </a>
       <a href="chats.html" class="tab-bar_tab ">
@@ -128,5 +131,8 @@
         <i class="fa fa-ellipsis-h"></i> <span class="tab-bar_tab">More</span>
       </a>
     </nav>
+    <div class="bigScreenText">
+      <span>please make your screen smaller</span>
+    </div>
   </body>
 </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chats</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="header__top">
+        <div class="header__column">
+          <i class="fa fa-plane"></i> <i class="fa fa-wifi"></i>
+        </div>
+        <div class="header__column"><span class="header-time">18:24</span></div>
+        <div class="header__column">
+          <i class="fa fa-moon-o"></i> <i class="fa fa-bluetooth-b"></i>
+          <span class="header-battery">66%</span>
+          <i class="fa fa-battery-full"></i>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__column">edit</div>
+        <div class="header__column">
+          <span class="header_text">chats<i class="fa fa-sort-down"></i></span>
+        </div>
+        <div class="header__column"></div>
+      </div>
+    </header>
+    <main class="chats">
+      <div class="search-bar">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="FIND friends,chat,plus friends" />
+      </div>
+      <ui class="chats_list">
+        <li class="chats_chat">
+          <a href="chat.html">
+            <div class="chat_content">
+              <img src="images/avatar.jpg" />
+              <div class="chat_preview">
+                <h3 class="chat_user">Lynn</h3>
+                <span class="chat_last-message">
+                  Hello! this is a test message.
+                </span>
+              </div>
+            </div>
+            <span class="chat_date-time"> 15:55 </span>
+          </a>
+        </li>
+
+        <li class="chats_chat">
+          <a href="chat.html">
+            <div class="chat_content">
+              <img src="images/avatar.jpg" />
+              <div class="chat_preview">
+                <h3 class="chat_user">kakao talk</h3>
+                <span class="chat_last-message">
+                  you logged into kakao talk.
+                </span>
+              </div>
+            </div>
+            <span class="chat_date-time"> jul 29 </span>
+          </a>
+        </li>
+      </ui>
+      <div class="chatbtn"><i class="fa fa-comment"></i></div>
+    </main>
+    <nav class="tab-bar">
+      <a href="index.html" class="tab-bar_tab ">
+        <i class="fa fa-user"></i> <span class="tab-bar_tab">Friends</span>
+      </a>
+      <a href="chats.html" class="tab-bar_tab tab-bar_tab--selected ">
+        <i class="fa fa-comment"> </i> <span class="tab-bar_tab"> Chats</span>
+      </a>
+      <a href="find.html" class="tab-bar_tab ">
+        <i class="fa fa-search"></i> <span class="tab-bar_tab">Find</span>
+      </a>
+      <a href="more.html" class="tab-bar_tab ">
+        <i class="fa fa-ellipsis-h"></i> <span class="tab-bar_tab">More</span>
+      </a>
+    </nav>
+    <div class="bigScreenText">
+      <span>Please make your screen smaller</span>
+    </div>
+  </body>
+</html>

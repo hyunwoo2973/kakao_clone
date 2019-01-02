@@ -9,22 +9,29 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div class="header-top"></div>
-      <div class="header-column">
-        <i class="fa fa-plane"></i> <i class="fa fa-wifi"></i>
+    <header class="top-header">
+      <div class="header__top">
+        <div class="header__column">
+          <i class="fa fa-plane"></i> <i class="fa fa-wifi"></i>
+        </div>
+        <div class="header__column">
+          <span class="header__time">18:24</span>
+        </div>
+        <div class="header__column">
+          <i class="fa fa-moon-o"></i> <i class="fa fa-bluetooth-b"></i>
+          <span class="header__battery">66%</span>
+          <i class="fa fa-battery-full"></i>
+        </div>
       </div>
-      <div class="header-column"><span class="header-time">18:24</span></div>
-      <div class="header-column">
-        <i class="fa fa-moon-o"></i> <i class="fa fa-bluetooth-b"></i>
-        <span class="header-battery">66%</span>
-        <i class="fa fa-battery-full"></i>
-      </div>
-      <div class="header_bottom">
-        <div class="header-column"><span class="header_text">edits</span></div>
-        <div class="header-column"><span class="header_text">find</span></div>
+      <div class="header__bottom">
+        <div class="header__column">
+          <span class="header__text">edits</span>
+        </div>
+        <div class="header__column"><span class="header__text">find</span></div>
+        <div class="header__column"></div>
       </div>
     </header>
     <main class="find">
@@ -52,20 +59,23 @@
           <span class="recommended_text">you have no recommended friends</span>
         </div>
       </section>
-      <nav class="tab_bar">
-        <a href="index.html" class="tab-bar_tab ">
-          <i class="fa fa-user"></i> <span class="tab-bar_tab">Friends</span>
-        </a>
-        <a href="chats.html" class="tab-bar_tab ">
-          <i class="fa fa-comment"> </i> <span class="tab-bar_tab"> Chats</span>
-        </a>
-        <a href="find.html" class="tab-bar_tab ta b-bar_tab--selected ">
-          <i class="fa fa-search"></i> <span class="tab-bar_tab">Find</span>
-        </a>
-        <a href="more.html" class="tab-bar_tab ">
-          <i class="fa fa-ellipsis-h"></i> <span class="tab-bar_tab">More</span>
-        </a>
-      </nav>
     </main>
+    <nav class="tab-bar">
+      <a href="index.html" class="tab-bar_tab ">
+        <i class="fa fa-user"></i> <span class="tab-bar_tab">Friends</span>
+      </a>
+      <a href="chats.html" class="tab-bar_tab ">
+        <i class="fa fa-comment"> </i> <span class="tab-bar_tab"> Chats</span>
+      </a>
+      <a href="find.html" class="tab-bar_tab tab-bar_tab--selected ">
+        <i class="fa fa-search"></i> <span class="tab-bar_tab">Find</span>
+      </a>
+      <a href="more.html" class="tab-bar_tab ">
+        <i class="fa fa-ellipsis-h"></i> <span class="tab-bar_tab">More</span>
+      </a>
+    </nav>
+    <div class="bigScreenText">
+      <span>Please make your screen smaller</span>
+    </div>
   </body>
 </html>
